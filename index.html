@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Rifai</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rifai Kacanegara</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rifai Kacanegara</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+            <li><a href="#activities" onclick="toggleMenu()">Activities</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Rifai Kacanegara profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rifai Kacanegara</h1>
+        <p class="section__text__p2">Data Scientist Student</p>
+        <p class="section__text__p1">My hobbies are playing futsal, video games, and sleeping</p>
+        <br>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="window.open('https://www.linkedin.com/in/rifai-kacanegara-54832b217/', '_blank')">
+            Check repository
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/rifai-kacanegara-54832b217/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/rifai-kacanegara-54832b217/', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="activities">
+      <p class="section__text__p1">My recent</p>
+      <h1 class="title">Activities</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/futsal.jpg"
+                alt="Futsal"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sports</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/org.jpg"
+                alt="Organization"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Organization</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ml.jpg"
+                alt="Videogames"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Videogames</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sleep.jpg"
+                alt="Sleeping"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sleeping</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">rifaikacanegoro@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rifai-kacanegara-54832b217" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rifai Kacanegara. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
